@@ -4,9 +4,9 @@ import { Text, StyleSheet, View, Button, TouchableOpacity } from "react-native";
 
 const HomeScreen = ({navigation}) => {
   return (
-    <View>
+    <View >
       <Text style={styles.text}>Yayad Demo App</Text>
-      <Button 
+      <Button style={styles.container}
         onPress={() => navigation.navigate('Components')}
         title="Go to Components Demo" 
       />
@@ -37,7 +37,7 @@ const HomeScreen = ({navigation}) => {
 const styles = StyleSheet.create({
   text: {
     fontSize: 30
-  }
+  },
 });
 
 export default HomeScreen;
